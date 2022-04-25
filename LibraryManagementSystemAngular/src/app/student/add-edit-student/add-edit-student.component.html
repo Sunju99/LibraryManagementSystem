@@ -1,0 +1,49 @@
+<div class="form-froup row">
+    <label class="col-sm-2 col-form-label">Student Name</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="studentName" placeholder="Enter student Name">
+    </div>
+    <label class="col-sm-2 col-form-label">Email</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="stunentEmail" placeholder="Enter Email">
+
+    </div>
+    <label class="col-sm-2 col-form-label">Father Name</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="fatherName" placeholder="Enter Father Name">
+
+    </div>
+    
+    <label class="col-sm-2 col-form-label">Phone</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="phone" placeholder="Enter phone">
+
+    </div>
+    
+    <label class="col-sm-2 col-form-label">Address</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="address" placeholder="Enter address">
+
+    </div>
+
+    <label class="col-sm-2 col-form-label">Class</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="class" placeholder="Enter class">
+
+    </div>
+
+    <label class="col-sm-2 col-form-label">RollNo</label>
+    <div class="col-sm-10">
+        <input type="number" class="form-control" [(ngModel)]="rollNo" placeholder="Enter RollNo">
+
+    </div>
+    
+    
+</div>
+<button (click)="AddStudent()" *ngIf="student.studentId==0" class="btn btn-primary">
+    Add
+</button>
+
+<button (click)="UpdateStudent()" *ngIf="student.studentId!=0" class="btn btn-primary">
+    Update
+</button>

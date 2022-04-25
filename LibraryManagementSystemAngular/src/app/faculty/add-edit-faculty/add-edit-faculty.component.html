@@ -1,0 +1,46 @@
+<div class="form-froup row">
+    <label class="col-sm-2 col-form-label">Faculty Id</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="facultyId" placeholder="Enter Faculty Id">
+    </div>
+
+    <label class="col-sm-2 col-form-label">Faculty Name</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="facultyName" placeholder="Enter Faculty Name">
+    </div>
+    <label class="col-sm-2 col-form-label">Email</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="facultyEmail" placeholder="Enter Email">
+
+    </div>
+    <label class="col-sm-2 col-form-label">Faculty Phone</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="facultyPhone" placeholder="Enter Faculty Phone">
+
+    </div>
+    
+   
+    
+    <label class="col-sm-2 col-form-label">Address</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="facultyAddress" placeholder="Enter address">
+
+    </div>
+
+    
+
+    <label class="col-sm-2 col-form-label">Dsignation Id</label>
+    <div class="col-sm-10">
+        <input type="number" class="form-control" [(ngModel)]="designationId" placeholder="Enter Dsignation Id">
+
+    </div>
+    
+    
+</div>
+<button (click)="AddFaculty()" *ngIf="faculty.facultyId==0" class="btn btn-primary">
+    Add
+</button>
+
+<button (click)="UpdateFaculty()" *ngIf="faculty.facultyId!=0" class="btn btn-primary">
+    Update
+</button>

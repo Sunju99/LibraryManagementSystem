@@ -1,0 +1,56 @@
+<div class="form-froup row">
+    <label class="col-sm-2 col-form-label">Book Name</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="bookName" placeholder="Enter Book Name">
+    </div>
+    <label class="col-sm-2 col-form-label">Description</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="description" placeholder="Enter Description">
+
+    </div>
+    <label class="col-sm-2 col-form-label">ISBN</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="isbn" placeholder="Enter ISBN">
+
+    </div>
+    
+    <label class="col-sm-2 col-form-label">Publisher</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="publisher" placeholder="Enter Publisher">
+
+    </div>
+    
+    <label class="col-sm-2 col-form-label">Author</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="author" placeholder="Enter Author">
+
+    </div>
+    <label class="col-sm-2 col-form-label">Location</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="location" placeholder="Enter Location">
+
+    </div>
+    <label class="col-sm-2 col-form-label">Quantity</label>
+    <div class="col-sm-10">
+        <input type="number" class="form-control" [(ngModel)]="quantity" placeholder="Enter Quantity">
+
+    </div>
+    <label class="col-sm-2 col-form-label">Issued</label>
+    <div class="col-sm-10">
+        <input type="number" class="form-control" [(ngModel)]="issued" placeholder="Enter Issued">
+
+    </div>
+    
+    <label class="col-sm-2 col-form-label">BookStatusId</label>
+    <div class="col-sm-10">
+        <input type="number" class="form-control" [(ngModel)]="bookStatusId" placeholder="Enter BookStatusId">
+
+    </div>
+</div>
+<button (click)="AddBook()" *ngIf="book.bookId==0" class="btn btn-primary">
+    Add
+</button>
+
+<button (click)="UpdateBook()" *ngIf="book.bookId!=0" class="btn btn-primary">
+    Update
+</button>

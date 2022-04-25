@@ -1,0 +1,30 @@
+<div class="form-froup row">
+   
+    <label id="Id" class="col-sm-2 col-form-label">Student Id</label>
+    <div class="col-sm-10">
+        <input type="number" class="form-control" [(ngModel)]="studentId" placeholder="Enter Student Id">
+
+    </div>
+    <label class="col-sm-2 col-form-label">Book Id</label>
+    <div class="col-sm-10">
+        <input type="number" class="form-control" [(ngModel)]="bookId" placeholder="Enter BookId">
+
+    </div>
+    
+    <label class="col-sm-2 col-form-label">price</label>
+    <div class="col-sm-10">
+        <input type="number" class="form-control" [(ngModel)]="price" placeholder="Enter Price">
+
+    </div>
+    
+    
+    
+    
+</div>
+<button (click)="AddSale()" *ngIf="sale.saleId==0" class="btn btn-primary">
+    Add
+</button>
+
+<button (click)="UpdateSale()" *ngIf="sale.saleId!=0" class="btn btn-primary">
+    Update
+</button>

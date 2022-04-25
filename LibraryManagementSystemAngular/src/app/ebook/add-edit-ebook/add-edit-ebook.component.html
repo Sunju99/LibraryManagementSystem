@@ -1,0 +1,37 @@
+<div class="form-froup row">
+    <label class="col-sm-2 col-form-label">EBook Name</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="eBookName" placeholder="Enter EBook Name">
+    </div>
+    <label class="col-sm-2 col-form-label">Description</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="description" placeholder="Enter Description">
+
+    </div>
+    <label class="col-sm-2 col-form-label">ISBN</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="isbn" placeholder="Enter ISBN">
+
+    </div>
+    
+    <label class="col-sm-2 col-form-label">Publisher</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="publisher" placeholder="Enter Publisher">
+
+    </div>
+    
+    <label class="col-sm-2 col-form-label">Author</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="author" placeholder="Enter Author">
+
+    </div>
+    
+    
+</div>
+<button (click)="AddEBook()" *ngIf="eBook.eBookId==0" class="btn btn-primary">
+    Add
+</button>
+
+<button (click)="UpdateEBook()" *ngIf="eBook.eBookId!=0" class="btn btn-primary">
+    Update
+</button>
